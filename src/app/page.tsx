@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { BucleScrollSequence } from "@/components/brand/BucleScrollSequence";
 import { Marquee } from "@/components/ui/Marquee";
 import { brand } from "@/config/brand";
 import { FeaturedProducts } from "@/components/sections/FeaturedProducts";
@@ -22,6 +23,7 @@ const MARQUEE_ITEMS = [
 export default function HomePage() {
   return (
     <>
+      <BucleScrollSequence />
       <Hero />
       <Marquee items={MARQUEE_ITEMS} />
       <FeaturedProducts />
